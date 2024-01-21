@@ -142,11 +142,7 @@ ul li a:hover {
   background: var(--highlight-color);
 }
 
-footer {
-  padding: 24px 0;
-}
-
-/* quando tiver o minimo de largura de 700px vai acontecer iso*/
+/* quando tiver o minimo de largura de 700px vai acontecer isso*/
 
 @media (min-width: 700px) {
   :root {
