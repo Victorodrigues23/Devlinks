@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio Victor</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="menu.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -17,19 +20,24 @@
     <header>
         <div class="interface">
 
+
+            <div>
+                <img src="../assets/logo.png" alt="logo victor" width="150px">
+            </div>
+
             <nav class="menu-desktop">
 
                 <ul>
-                    <li><a href="">Início</a></li>
-                    <li><a href="">Especialidade</a></li>
-                    <li><a href="">Projeto</a></li>
-                    <li><a href="">Sobre</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                 </ul>
             </nav>
 
 
             <div class="btn-contato">
-                <a href="#">
+                <a href="#contato">
                     <button>
                         Contato
                     </button>
@@ -37,7 +45,48 @@
 
             </div>
 
+            <div class="btn-abrir-menu" id="btn-menu">
+
+                <i class="bi bi-list"></i>
+
+            </div>
+
+
+
+
+
+            <div class="menu-mobile" id="menu-mobile">
+
+
+
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+
+                <nav>
+
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Especialidade</a></li>
+                        <li><a href="#">Projeto</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+
+            <div class="overlay-menu" id="overlay-menu"></div>
+
         </div>
+
+
+
+
+
+
 
 
 
@@ -45,63 +94,56 @@
     </header>
 
 
-    <main>
+    <main id="inicio">
 
-        <section class="topo-do-site">
+        <section class="topo-do-site inicio">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
-                        <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span></h1>
-                        <p>Em linguística, a noção de texto é ampla e ainda aberta a uma definição mais precisa. Grosso
-                            modo, pode ser entendido como manifestação linguística das ideias de um autor, que serão
-
+                        <p>Olá Pessoas</p>
+                        <h1>I'm Victor Rodrigues Front end developer<span>.</span></h1>
+                        <p>
+                            🙋‍♂️ Seja bem-vindo ao meu portifólio website
                         </p>
-
-                        <div class="btn-contato">
-                            <a href="#">
-                                <button>Entre em Contato</button>
-                            </a>
-                        </div>
                     </div>
 
-                    <div class="img-topo-site">
-                        <img src="../assets/pinguin.png" alt="">
+                    <div class=" img-topo-site">
+                        <img src="../assets/Boneco pc.png" alt="" width="500px" style="border-radius: 50px;"
+                            style="border: none;">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="especialidades">
+        <section class="especialidades" id="habilidades">
             <div class="interface">
-                <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span>.</h2>
+                <h2 class="titulo">MINHAS <span>HABILIDADES</span>.</h2>
 
                 <div class="flex">
                     <div class="especialidades-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-code-slash" viewBox="0 0 16 16">
-                            <path
-                                d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
+                        <svg id="html5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-filetype-html" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z" />
                         </svg>
-                        <h3>Website</h3>
-                        <p>Em linguística, a noção de texto é ampla e ainda aberta a uma definição mais precisa.</p>
+
                     </div>
                     <div class="especialidades-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-code-slash" viewBox="0 0 16 16">
-                            <path
-                                d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
+                        <svg id="css3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-filetype-css" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM3.397 14.841a1.13 1.13 0 0 0 .401.823q.195.162.478.252.284.091.665.091.507 0 .859-.158.354-.158.539-.44.187-.284.187-.656 0-.336-.134-.56a1 1 0 0 0-.375-.357 2 2 0 0 0-.566-.21l-.621-.144a1 1 0 0 1-.404-.176.37.37 0 0 1-.144-.299q0-.234.185-.384.188-.152.512-.152.214 0 .37.068a.6.6 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.1 1.1 0 0 0-.2-.566 1.2 1.2 0 0 0-.5-.41 1.8 1.8 0 0 0-.78-.152q-.439 0-.776.15-.337.149-.527.421-.19.273-.19.639 0 .302.122.524.124.223.352.367.228.143.539.213l.618.144q.31.073.463.193a.39.39 0 0 1 .152.326.5.5 0 0 1-.085.29.56.56 0 0 1-.255.193q-.167.07-.413.07-.175 0-.32-.04a.8.8 0 0 1-.248-.115.58.58 0 0 1-.255-.384zM.806 13.693q0-.373.102-.633a.87.87 0 0 1 .302-.399.8.8 0 0 1 .475-.137q.225 0 .398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.4 1.4 0 0 0-.489-.272 1.8 1.8 0 0 0-.606-.097q-.534 0-.911.223-.375.222-.572.632-.195.41-.196.979v.498q0 .568.193.976.197.407.572.626.375.217.914.217.439 0 .785-.164t.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.8.8 0 0 1-.118.363.7.7 0 0 1-.272.25.9.9 0 0 1-.401.087.85.85 0 0 1-.478-.132.83.83 0 0 1-.299-.392 1.7 1.7 0 0 1-.102-.627zM6.78 15.29a1.2 1.2 0 0 1-.111-.449h.764a.58.58 0 0 0 .255.384q.106.073.25.114.142.041.319.041.245 0 .413-.07a.56.56 0 0 0 .255-.193.5.5 0 0 0 .085-.29.39.39 0 0 0-.153-.326q-.152-.12-.463-.193l-.618-.143a1.7 1.7 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.1 1.1 0 0 1-.123-.524q0-.366.19-.639.19-.272.527-.422t.777-.149q.456 0 .779.152.326.153.5.41.18.255.2.566h-.75a.56.56 0 0 0-.12-.258.6.6 0 0 0-.246-.181.9.9 0 0 0-.37-.068q-.324 0-.512.152a.47.47 0 0 0-.184.384q0 .18.143.3a1 1 0 0 0 .404.175l.621.143q.326.075.566.211t.375.358.135.56q0 .37-.188.656a1.2 1.2 0 0 1-.539.439q-.351.158-.858.158-.381 0-.665-.09a1.4 1.4 0 0 1-.478-.252 1.1 1.1 0 0 1-.29-.375" />
                         </svg>
-                        <h3>Loja online</h3>
-                        <p>Em linguística, a noção de texto é ampla e ainda aberta a uma definição mais precisa.</p>
+
                     </div>
                     <div class="especialidades-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-code-slash" viewBox="0 0 16 16">
-                            <path
-                                d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
+                        <svg id="js" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-filetype-js" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM3.186 15.29a1.2 1.2 0 0 1-.111-.449h.765a.58.58 0 0 0 .255.384q.105.073.249.114.143.041.319.041.246 0 .413-.07a.56.56 0 0 0 .255-.193.5.5 0 0 0 .085-.29.39.39 0 0 0-.153-.326q-.151-.12-.462-.193l-.619-.143a1.7 1.7 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.1 1.1 0 0 1-.123-.524q0-.366.19-.639.19-.272.528-.422.336-.15.776-.149.457 0 .78.152.324.153.5.41.18.255.2.566h-.75a.56.56 0 0 0-.12-.258.6.6 0 0 0-.247-.181.9.9 0 0 0-.369-.068q-.325 0-.513.152a.47.47 0 0 0-.184.384q0 .18.143.3a1 1 0 0 0 .405.175l.62.143q.327.075.566.211.24.136.375.358t.135.56q0 .37-.188.656a1.2 1.2 0 0 1-.539.439q-.351.158-.858.158-.381 0-.665-.09a1.4 1.4 0 0 1-.478-.252 1.1 1.1 0 0 1-.29-.375m-3.104-.033A1.3 1.3 0 0 1 0 14.791h.765a.6.6 0 0 0 .073.27.5.5 0 0 0 .454.246q.285 0 .422-.164.138-.165.138-.466v-2.745h.79v2.725q0 .66-.357 1.005-.354.345-.984.345a1.6 1.6 0 0 1-.569-.094 1.15 1.15 0 0 1-.407-.266 1.1 1.1 0 0 1-.243-.39" />
                         </svg>
-                        <h3>Blog</h3>
-                        <p>Em linguística, a noção de texto é ampla e ainda aberta a uma definição mais precisa.</p>
+
+
                     </div>
 
                 </div>
@@ -109,7 +151,119 @@
 
 
         </section>
+
+        <section class="sobre" id="sobre">
+            <div class="interface">
+
+                <div class="flex">
+
+                    <div class="txt-sobre">
+
+                        <h2>MUITO PRAZER, <span>SOU VICTOR RODRIGUES.</span></h2>
+
+
+
+                        <p> 👋 Meu nome é Victor Rodrigues
+                            Sou de Fortaleza/CE. Estou Cursando 3º período de Análise e Desenvolvimento de Sistemas
+                            Descomplica
+                            Faculdade Digital <br></br>
+
+                            👨‍💻
+                            Atualmente estou me especializando como Desenvolvedor Front-End, estou constantemente
+                            buscando
+                            aprimorar minhas habilidades de programação e Análise, sempre em busca de novos desafios e
+                            oportunidades de aprendizado.
+                        </p>
+                        <div class="btn-social">
+                            <a href="https://www.linkedin.com/in/victor-rodrigues-3b9605205/" target="_blank"><button><i
+                                        class="bi bi-linkedin"></i></button></a>
+                            <a href="https://github.com/Victorodrigues23" target="_blank"><button><i
+                                        class="bi bi-github"></i></button></a>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="portfolio" id="projetos">
+            <div class="interface">
+
+                <h2 class="titulo">Aqui estão alguns <span>Projetos</span> de Estudos.</h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(../assets/petlife.png);">
+                        <div class="overlay">Projeto 1</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(../assets/orlandocity.png);">
+                        <div class="overlay">Projeto 2</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="formulario">
+            <div class="interface">
+
+
+                <h2 class="titulo">FALA <span>COMIGO</span>.</h2>
+
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu Nome completo :" required>
+                    <input type="text" name="" id="" placeholder="Seu Email :" required>
+                    <input type="text" name="" id="" placeholder="Seu Celular :">
+                    <textarea name="" id="" placeholder="Sua mensagem :" required></textarea>
+
+                    <div class="btn-enviar">
+                        <input type="submit" value="ENVIAR">
+                    </div>
+                </form>
+
+            </div>
+
+        </section>
+
     </main>
+
+    <footer id="contato">
+        <div class="interface">
+
+            <div class="line-footer">
+
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="../assets/logo.png" alt="" width="190px">
+
+                    </div>
+                    <div class="btn-social">
+                        <a href="https://www.linkedin.com/in/victor-rodrigues-3b9605205/" target="_blank"><button><i
+                                    class="bi bi-linkedin"></i></button></a>
+                        <a href="https://github.com/Victorodrigues23" target="_blank"><button><i
+                                    class="bi bi-github"></i></button></a>
+                        <a href="https://wa.me/558598095937" target="_blank"><button><i
+                                    class="bi bi-whatsapp"></i></button></a>
+
+
+                    </div>
+                </div>
+                <div class="line-footer borda">
+
+                    <p>
+                        <i class="bi bi-envelope-fill"></i>
+                        <a href="mailto:victorodrigues2312@gmail.com">victorodrigues2312@gmail.com</a>
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </footer>
 
 
 
